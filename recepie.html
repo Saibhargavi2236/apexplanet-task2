@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            recepie details
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Recipe Details</h1>
+        
+        <div class="recipe-details">
+            <div class="recipe-name">
+                <h2 id="recipeName">Recipe Name: </h2>
+                <h2 id="recipeNameDisplay" style="display: none;"></h2>
+            </div>
+            <div id="recipeNameSection">
+                <input type="text" id="recipeNameInput" placeholder="Enter Recipe Name">
+                <button id="setRecipeNameBtn">Set Recipe Name</button>
+            </div>
+            <h3 id="recipeIngredientsTitle">Ingredients: </h3>
+            <div class="ingredient-section" id="ingredientSection">
+                <input type="text" id="ingredientName" placeholder="Ingredient Name">
+                <input type="text" id="ingredientAmount" placeholder="Amount (e.g. 2 cups)">
+                <button id="addIngredientBtn">Add</button>
+                <button id="setIngredientsBtn">Set</button>
+            </div>
+            <ul id="ingredientList" class="ingredient-list">
+                <!-- Ingredients will appear here -->
+            </ul>
+            <h3>Instructions: </h3>
+            <p id="savedProcess" class="saved-instructions"></p>
+            <div class="instruction-section">
+                <textarea id="recipeProcess" placeholder="Enter cooking instructions..."></textarea>
+                <button id="saveProcessBtn">Save Instructions</button>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
