@@ -61,10 +61,9 @@ if (saveRecipeNameBtn) {
     const saveProcessBtn = document.getElementById("saveProcessBtn");
 const recipeProcessTextarea = document.getElementById("recipeProcess");
 const savedProcessDisplay = document.getElementById("savedProcess");
-
 if (saveProcessBtn) {
     saveProcessBtn.addEventListener("click", function () {
-        const instructions = recipeProcessTextarea.value.trim();
+        const instructions = recipeProcessTextarea.value.trim()+"\n\n\n Just take a screen shot and share";
         if (instructions !== "") {
             savedProcessDisplay.textContent = instructions;
             savedProcessDisplay.style.display = "block";
